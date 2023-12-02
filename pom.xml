@@ -1,62 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Coordonnées du projet -->
     <groupId>com.example</groupId>
-    <artifactId>my-maven-project</artifactId>
+    <artifactId>my-java-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <!-- Informations sur le projet -->
-    <name>My Maven Project</name>
-    <description>A simple Maven project</description>
-
-    <!-- Propriétés du projet -->
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-    <!-- Dépendances du projet -->
     <dependencies>
-        <!-- Dépendances nécessaires pour les tests unitaires -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- Autres dépendances -->
+        <!-- Ajoutez vos dépendances ici -->
     </dependencies>
 
-    <!-- Configuration du build -->
     <build>
-        <!-- Plugins Maven -->
         <plugins>
-            <!-- Plugin du compilateur (pour Java) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.8.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
-                </configuration>
-            </plugin>
-
-            <!-- Plugin Surefire pour l'exécution des tests unitaires -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                        <include>**/*Tests.java</include>
-                        <include>**/Test*.java</include>
-                    </includes>
                 </configuration>
             </plugin>
         </plugins>
