@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-                git credentialsId: 'git_credentials', url: 'https://github.com/badre-09/Triang07.git'
+                git credentialsId: 'git_credentials', url: 'https://github.com/glogmp/TP-.git'
             }
         }
     }
